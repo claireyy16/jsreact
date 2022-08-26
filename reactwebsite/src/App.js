@@ -1,28 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import './index.css';
+import {HiMenu} from "react-icons/hi";
+
+function hello() {
+  alert('You clicked me!');
+}
 
 function App() {
   const test = () => {
     alert("test");
   }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          hello
-        </a>
-        <button type="button" onClick={() => test()}>Click Me!</button>
+          <p className="text-10xl font-bold">
+      Hello world!
+          </p>
+          <div><HiMenu/></div>
+        <div>
+          <button type="button" onClick={() => test()}> Hey there ! test </button>
+        </div>
+        <button type="button" onClick={() => hello()}>Click Me!</button>
 
-      </header>
     </div>
   );
 }
